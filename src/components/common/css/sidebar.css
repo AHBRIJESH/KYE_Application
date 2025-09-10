@@ -1,0 +1,375 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Allow sidebar to overflow so submenus can float outside */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 220px;
+  background: #2c3034;
+  color: #fff;
+  transition: all 0.5s ease;
+  z-index: 1000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 12px;
+  overflow: visible; /* ✅ Critical: allows floating panels to escape */
+}
+
+.sidebar.close {
+  width: 60px;
+}
+
+.sidebar header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  background: #343a40;
+}
+
+.sidebar header .image-text {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar header .image-text .image {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  height: 36px;
+  width: 36px;
+  border-radius: 6px;
+  background: url('/assets/img/audit-workflow-logo.png') no-repeat center center;
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s;
+}
+
+.sidebar header .image-text .logo-text {
+  margin-left: 12px;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar.close header .image-text .logo-text {
+  opacity: 0;
+}
+
+.sidebar header .image-text .name {
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.sidebar header .image-text .profession {
+  font-size: 11px;
+  font-weight: 400;
+  color: #aaa;
+  white-space: nowrap;
+}
+
+.sidebar header .toggle {
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.sidebar.close header .toggle {
+  transform: rotate(180deg);
+}
+
+.sidebar .menu-bar {
+  height: calc(100% - 68px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
+  padding: 12px 0;
+}
+
+.sidebar .menu-links {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  overflow: visible;
+}
+
+.sidebar .menu-links li {
+  margin: 4px 8px;
+  position: relative;
+}
+
+.sidebar .menu-links li a,
+.sidebar .menu-links li button {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  transition: all 0.3s ease;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  width: 100%;
+  text-align: left;
+}
+
+.sidebar .menu-links li a:hover,
+.sidebar .menu-links li a.active,
+.sidebar .menu-links li button:hover {
+  background: #3a3f45;
+}
+
+.sidebar .menu-links li a .icon,
+.sidebar .menu-links li button .icon {
+  min-width: 28px;
+  font-size: 18px;
+  color: #ddd;
+}
+
+.sidebar .menu-links li a.active .icon,
+.sidebar .menu-links li a:hover .icon {
+  color: #fff;
+}
+
+.sidebar .menu-links li a .nav-text,
+.sidebar .menu-links li button .nav-text {
+  font-size: 12px;
+  color: #ddd;
+  margin-left: 12px;
+  white-space: nowrap;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar.close .menu-links li a .nav-text,
+.sidebar.close .menu-links li button .nav-text {
+  opacity: 0;
+  width: 0;
+  overflow: hidden;
+}
+
+/* --- FLOATING SUBMENU (OUTSIDE SIDEBAR) --- */
+
+.sidebar .menu-links li .submenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1001;
+  background: #3a4d7e;
+  font-size: 12px;
+  color: white;
+  min-width: 200px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: all 0.2s ease;
+}
+
+.sidebar .menu-links li .submenu.open {
+  display: block;
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.sidebar .menu-links li .submenu .submenu {
+  top: 0;
+  left: 0;
+}
+
+.sidebar .menu-links li .submenu li {
+  margin: 0;
+}
+
+.sidebar .menu-links li .submenu li a,
+.sidebar .menu-links li .submenu li button {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #fff;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  transition: background 0.2s;
+  border-radius: 0;
+}
+
+.sidebar .menu-links li .submenu li a:hover,
+.sidebar .menu-links li .submenu li button:hover {
+  background: #2b3a5e;
+}
+
+.sidebar .menu-links li .submenu li a.active,
+.sidebar .menu-links li .submenu li button.active {
+  background: #2b3a5e;
+}
+
+.sidebar .menu-links li .submenu li a .icon,
+.sidebar .menu-links li .submenu li button .icon {
+  min-width: 20px;
+  font-size: 14px;
+  color: #ddd;
+}
+
+.sidebar .menu-links li .submenu li a .nav-text,
+.sidebar .menu-links li .submenu li button .nav-text {
+  margin-left: 8px;
+  font-size: 12px;
+  color: #fff;
+}
+
+/* Arrow indicator */
+.sidebar .menu-links li .menu-button .arrow {
+  margin-left: auto;
+  font-size: 12px;
+  color: #ccc;
+  transition: transform 0.3s;
+}
+
+.sidebar .menu-links li .menu-button.expanded .arrow {
+  transform: rotate(90deg);
+}
+
+/* Button styling */
+.sidebar .menu-links li .menu-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  text-decoration: none;
+  border: none;
+  background: transparent;
+  padding: 8px 16px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.sidebar .menu-links li .menu-button:hover {
+  background: #3a3f45;
+}
+
+.sidebar .menu-links li .menu-button.active {
+  background: #3a3f45;
+}
+
+/* Hide submenus when collapsed */
+.sidebar.close .menu-links li .submenu {
+  display: none !important;
+}
+
+/* Bottom Content — Logout */
+.sidebar .bottom-content {
+  padding: 0 16px 16px;
+  margin-top: auto;
+}
+
+.sidebar .bottom-content .nav-link {
+  margin-top: 16px;
+}
+
+.sidebar .logout-link {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding: 8px 16px;
+  background: none;
+  border: none;
+  color: #ff6b6b;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s;
+  text-align: left;
+}
+
+.sidebar .logout-link:hover {
+  background: rgba(255, 107, 107, 0.1);
+}
+
+.sidebar .logout-link .icon {
+  min-width: 28px;
+  font-size: 18px;
+  color: #ff6b6b;
+}
+
+/* Overlay for Mobile */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 60px;
+  }
+
+  .sidebar.close {
+    width: 0;
+    box-shadow: none;
+  }
+
+  .sidebar header .image-text .logo-text,
+  .sidebar .menu-links li a .nav-text,
+  .sidebar .menu-links li button .nav-text {
+    display: none;
+  }
+
+  .sidebar.open {
+    width: 220px;
+  }
+
+  .sidebar.open header .image-text .logo-text,
+  .sidebar.open .menu-links li a .nav-text,
+  .sidebar.open .menu-links li button .nav-text {
+    display: block;
+    opacity: 1;
+  }
+
+  .sidebar-overlay {
+    display: none;
+  }
+
+  .sidebar.open + .sidebar-overlay {
+    display: block;
+  }
+
+  /* Hide floating submenus on mobile */
+  .sidebar .menu-links li .submenu {
+    display: none !important;
+  }
+}
+
+/* Accessibility */
+.sidebar a:focus,
+.sidebar button:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}

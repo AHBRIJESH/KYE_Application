@@ -1,0 +1,45 @@
+@import '../../../styles/reusable.css';
+
+.footer {
+  background: var(--white);
+  border-top: 1px solid rgba(0,0,0,0.1);
+  display: flex;
+  align-items: center;
+  height: var(--footer-height);
+  padding: 0 var(--spacing-md);
+  font-size: var(--font-size-xs);
+  width: 100%;
+}
+
+.copyright,
+.version {
+  font-size: var(--font-size-xs);
+  margin: 0;
+}
+
+.footer .container-fluid {
+  width: 100%;
+  max-width: none;
+}
+
+.footer .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+@media (max-width: var(--breakpoint-sm)) {
+  .footer {
+    padding: 0 var(--spacing-xs);
+  }
+  
+  .footer .row {
+    flex-direction: column;
+    gap: var(--spacing-xs);
+  }
+  
+  .version {
+    text-align: center;
+  }
+}

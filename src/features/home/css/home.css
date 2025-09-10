@@ -1,0 +1,104 @@
+.welcome-card {
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.welcome-card h1 {
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-size: 1.6rem;
+}
+
+.welcome-card p {
+  color: var(--text-light);
+  font-size: 1rem;
+}
+
+/* Card styles for feature grid */
+.card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.card-body {
+  text-align: center;
+  padding: 15px;
+}
+
+.card-body i {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.card-body i:hover {
+  transform: scale(1.1);
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--text-dark);
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .welcome-card h1 {
+    font-size: 1.4rem;
+  }
+  
+  .card-body i {
+    font-size: 1.5rem;
+  }
+  
+  .card-title {
+    font-size: 1rem;
+  }
+  
+  .card-text {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .welcome-card {
+    padding: 15px;
+  }
+  
+  .welcome-card h1 {
+    font-size: 1.3rem;
+  }
+  
+  .card-body {
+    padding: 12px;
+  }
+  
+  .card-body i {
+    font-size: 1.3rem;
+  }
+  
+  .card-title {
+    font-size: 0.95rem;
+  }
+  
+  .card-text {
+    font-size: 0.8rem;
+  }
+}

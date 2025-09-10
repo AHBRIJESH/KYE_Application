@@ -1,0 +1,44 @@
+:root {
+  /* Primary Colors */
+  --primary-color: #16355f;
+  --primary-color-light: #274b92;
+  --primary-color-hover: #0f2949;
+  --secondary-color: #4a89dc;
+  --accent-color: #ffc107;
+  --success-color: #28a745;
+  --danger-color: #c1121f;
+  --info-color: #17a2b8;
+  --warning-color: #ffc107;
+
+  /* Neutral Colors */
+  --light-bg: #f5f7fa;
+  --white: #ffffff;
+  --text-dark: #0a244d;
+  --text-light: #6c757d;
+  --border-color: #e5e9f2;
+  --shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+
+  /* Typography - ENFORCED SMALLER SIZES */
+  --font-size-xs: 9px;
+  --font-size-sm: 10px;
+  --font-size-base: 11px; /* <-- Primary Font Size */
+  --font-size-lg: 12px;
+  --font-size-xl: 13px;
+  --font-size-xxl: 14px;
+
+  /* Spacing - TIGHTER */
+  --spacing-xxs: 2px;
+  --spacing-xs: 4px;
+  --spacing-sm: 6px;
+  --spacing-md: 8px;
+  --spacing-lg: 10px;
+  --spacing-xl: 12px;
+
+  /* Component Sizes */
+  --nav-height: 45px;
+  --sidebar-width: 220px;
+  --sidebar-collapsed-width: 60px; /* Icons only */
+  --header-height: 50px;
+  --footer-height: 35px;
+}

@@ -1,0 +1,36 @@
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
+  overflow: auto;
+  transition: margin-left 0.3s ease;
+}
+
+.content-area {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sidebar-open {
+  margin-left: 220px;
+}
+
+.sidebar-collapsed {
+  margin-left: 60px;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 60px;
+  }
+}
+
+@media (max-width: 576px) {
+  .main-content {
+    margin-left: 60px;
+  }
+}

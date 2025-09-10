@@ -1,0 +1,864 @@
+{
+  "assigned": 17,
+  "underProcess": 17,
+  "closedByAuditee": 0,
+  "closedByAuditor": 0,
+  "departments": [
+    {
+      "name": "Finance", 
+      "underProcess": 4, 
+      "closedByAuditee": 0, 
+      "closedByAuditor": 0,
+      "divisions": [
+        { 
+          "name": "Accounts Payable", 
+          "underProcess": 1, 
+          "closedByAuditee": 0, 
+          "closedByAuditor": 0,
+          "people": [
+            { 
+              "name": "Arjun", 
+              "underProcess": 1, 
+              "closedByAuditee": 0, 
+              "closedByAuditor": 0,
+              "exceptions": [
+                { 
+                  "id": "EXC-101", 
+                  "name": "Duplicate Transaction", 
+                  "underProcess": 1, 
+                  "closedByAuditee": 0, 
+                  "closedByAuditor": 0,
+                  "details": {
+                    "Sno": 1,
+                    "ExceptionID": "EXC-101",
+                    "AssignedBy": "Usman",
+                    "AssignedDateTime": "31-07-2025 09:15",
+                    "AssignedTo": "Arjun",
+                    "Department": "Finance",
+                    "Division": "Accounts Payable",
+                    "AssignedHandledBy": "John",
+                    "AssignmentAcceptedDate": "03-08-2025 09:15",
+                    "CurrentStatus": "Under Process",
+                    "LastUpdatedDate": "08-08-2025 16:00",
+                    "emails": [
+                      {
+                        "emailId": "EM-101-1",
+                        "from": "auditor@example.com",
+                        "dateTime": "05-08-2025 09:30",
+                        "to": "auditee@example.com",
+                        "cc": ["manager@example.com", "finance@example.com"],
+                        "subject": "Assignment of Exception EXC-101",
+                        "content": "Dear Arjun,<br><br>This email is to inform you that you have been assigned Exception EXC-101 related to the financial audit. Please review the details and take necessary action.<br><br>The exception details are as follows:<br>- Exception ID: EXC-101<br>- Description: Duplicate Transaction<br>- Department: Finance<br>- Division: Accounts Payable<br><br>Please acknowledge receipt of this assignment and provide an estimated timeline for resolution.<br><br>Regards,<br>Usman<br>Audit Department"
+                      },
+                      {
+                        "emailId": "EM-101-2",
+                        "from": "auditee@example.com",
+                        "dateTime": "06-08-2025 14:15",
+                        "to": "auditor@example.com",
+                        "cc": ["manager@example.com"],
+                        "subject": "Re: Assignment of Exception EXC-101",
+                        "content": "Dear Usman,<br><br>I acknowledge receipt of the assignment for Exception EXC-101. I am currently reviewing the details and will provide an update on the resolution timeline shortly.<br><br>Thank you for bringing this to my attention.<br><br>Regards,<br>Arjun<br>Finance"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        { 
+          "name": "Accounts Receivable", 
+          "underProcess": 1, 
+          "closedByAuditee": 0, 
+          "closedByAuditor": 0,
+          "people": [
+            { 
+              "name": "Bala", 
+              "underProcess": 1, 
+              "closedByAuditee": 0, 
+              "closedByAuditor": 0,
+              "exceptions": [
+                { 
+                  "id": "EXC-102", 
+                  "name": "Fraudulent Entry", 
+                  "underProcess": 1, 
+                  "closedByAuditee": 0, 
+                  "closedByAuditor": 0,
+                  "details": {
+                    "Sno": 2,
+                    "ExceptionID": "EXC-102",
+                    "AssignedBy": "Michael Green",
+                    "AssignedDateTime": "02-08-2025 10:30",
+                    "AssignedTo": "Bala",
+                    "Department": "Finance",
+                    "Division": "Accounts Receivable",
+                    "AssignedHandledBy": "Bala",
+                    "AssignmentAcceptedDate": "04-08-2025 09:15",
+                    "CurrentStatus": "Under Process",
+                    "LastUpdatedDate": "06-08-2025 14:15",
+                    "emails": [
+                      {
+                        "emailId": "EM-102-1",
+                        "from": "auditor@example.com",
+                        "dateTime": "05-08-2025 09:30",
+                        "to": "auditee@example.com",
+                        "cc": ["manager@example.com", "finance@example.com"],
+                        "subject": "Assignment of Exception EXC-102",
+                        "content": "Dear Bala,<br><br>This email is to inform you that you have been assigned Exception EXC-102 related to the financial audit. Please review the details and take necessary action.<br><br>The exception details are as follows:<br>- Exception ID: EXC-102<br>- Description: Fraudulent Entry<br>- Department: Finance<br>- Division: Accounts Receivable<br><br>Please acknowledge receipt of this assignment and provide an estimated timeline for resolution.<br><br>Regards,<br>Michael Green<br>Audit Department"
+                      },
+                      {
+                        "emailId": "EM-102-2",
+                        "from": "auditee@example.com",
+                        "dateTime": "06-08-2025 14:15",
+                        "to": "auditor@example.com",
+                        "cc": ["manager@example.com"],
+                        "subject": "Re: Assignment of Exception EXC-102",
+                        "content": "Dear Michael Green,<br><br>I acknowledge receipt of the assignment for Exception EXC-102. I am currently reviewing the details and will provide an update on the resolution timeline shortly.<br><br>Thank you for bringing this to my attention.<br><br>Regards,<br>Bala<br>Finance"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        { 
+          "name": "Budgeting & Forecasting", 
+          "underProcess": 2, 
+          "closedByAuditee": 0, 
+          "closedByAuditor": 0,
+          "people": [
+            { 
+              "name": "Kiran", 
+              "underProcess": 1, 
+              "closedByAuditee": 0, 
+              "closedByAuditor": 0,
+              "exceptions": [
+                { 
+                  "id": "EXC-103", 
+                  "name": "Vendor Payment Error", 
+                  "underProcess": 1, 
+                  "closedByAuditee": 0, 
+                  "closedByAuditor": 0,
+                  "details": {
+                    "Sno": 3,
+                    "ExceptionID": "EXC-103",
+                    "AssignedBy": "John Doe",
+                    "AssignedDateTime": "01-08-2025 11:45",
+                    "AssignedTo": "Kiran",
+                    "Department": "Finance",
+                    "Division": "Budgeting & Forecasting",
+                    "AssignedHandledBy": "Kiran",
+                    "AssignmentAcceptedDate": "05-07-2025 08:30",
+                    "CurrentStatus": "Under Process",
+                    "LastUpdatedDate": "06-08-2025 14:15",
+                    "emails": [
+                      {
+                        "emailId": "EM-103-1",
+                        "from": "auditor@example.com",
+                        "dateTime": "05-08-2025 09:30",
+                        "to": "auditee@example.com",
+                        "cc": ["manager@example.com", "finance@example.com"],
+                        "subject": "Assignment of Exception EXC-103",
+                        "content": "Dear Kiran,<br><br>This email is to inform you that you have been assigned Exception EXC-103 related to the financial audit. Please review the details and take necessary action.<br><br>The exception details are as follows:<br>- Exception ID: EXC-103<br>- Description: Vendor Payment Error<br>- Department: Finance<br>- Division: Budgeting & Forecasting<br><br>Please acknowledge receipt of this assignment and provide an estimated timeline for resolution.<br><br>Regards,<br>John Doe<br>Audit Department"
+                      },
+                      {
+                        "emailId": "EM-103-2",
+                        "from": "auditee@example.com",
+                        "dateTime": "06-08-2025 14:15",
+                        "to": "auditor@example.com",
+                        "cc": ["manager@example.com"],
+                        "subject": "Re: Assignment of Exception EXC-103",
+                        "content": "Dear John Doe,<br><br>I acknowledge receipt of the assignment for Exception EXC-103. I am currently reviewing the details and will provide an update on the resolution timeline shortly.<br><br>Thank you for bringing this to my attention.<br><br>Regards,<br>Kiran<br>Finance"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            { 
+              "name": "Meena", 
+              "underProcess": 1, 
+              "closedByAuditee": 0, 
+              "closedByAuditor": 0,
+              "exceptions": [
+                { 
+                  "id": "EXC-104", 
+                  "name": "Invoice Mismatch", 
+                  "underProcess": 1, 
+                  "closedByAuditee": 0, 
+                  "closedByAuditor": 0,
+                  "details": {
+                    "Sno": 4,
+                    "ExceptionID": "EXC-104",
+                    "AssignedBy": "Jane Smith",
+                    "AssignedDateTime": "02-08-2025 14:20",
+                    "AssignedTo": "Meena",
+                    "Department": "Finance",
+                    "Division": "Budgeting & Forecasting",
+                    "AssignedHandledBy": "Meena",
+                    "AssignmentAcceptedDate": "05-08-2025 11:45",
+                    "CurrentStatus": "Under Process",
+                    "LastUpdatedDate": "09-08-2025 14:15",
+                    "emails": [
+                      {
+                        "emailId": "EM-104-1",
+                        "from": "auditor@example.com",
+                        "dateTime": "06-08-2025 09:30",
+                        "to": "auditee@example.com",
+                        "cc": ["manager@example.com", "finance@example.com"],
+                        "subject": "Assignment of Exception EXC-104",
+                        "content": "Dear Meena,<br><br>This email is to inform you that you have been assigned Exception EXC-104 related to the financial audit. Please review the details and take necessary action.<br><br>The exception details are as follows:<br>- Exception ID: EXC-104<br>- Description: Invoice Mismatch<br>- Department: Finance<br>- Division: Budgeting & Forecasting<br><br>Please acknowledge receipt of this assignment and provide an estimated timeline for resolution.<br><br>Regards,<br>Jane Smith<br>Audit Department"
+                      },
+                      {
+                        "emailId": "EM-104-2",
+                        "from": "auditee@example.com",
+                        "dateTime": "09-08-2025 14:15",
+                        "to": "auditor@example.com",
+                        "cc": ["manager@example.com"],
+                        "subject": "Re: Assignment of Exception EXC-104",
+                        "content": "Dear Jane Smith,<br><br>I acknowledge receipt of the assignment for Exception EXC-104. I am currently reviewing the details and will provide an update on the resolution timeline shortly.<br><br>Thank you for bringing this to my attention.<br><br>Regards,<br>Meena<br>Finance"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Human Resources", 
+      "underProcess": 11, 
+      "closedByAuditee": 0, 
+      "closedByAuditor": 0,
+      "divisions": [
+        { 
+          "name": "Recruitment", 
+          "underProcess": 5, 
+          "closedByAuditee": 0, 
+          "closedByAuditor": 0,
+          "people": [
+            { 
+              "name": "Ravi", 
+              "underProcess": 3, 
+              "closedByAuditee": 0, 
+              "closedByAuditor": 0,
+              "exceptions": [
+                { 
+                  "id": "EXC-105", 
+                  "name": "Double Billing", 
+                  "underProcess": 1, 
+                  "closedByAuditee": 0, 
+                  "closedByAuditor": 0,
+                  "details": {
+                    "Sno": 5,
+                    "ExceptionID": "EXC-105",
+                    "AssignedBy": "Robert Johnson",
+                    "AssignedDateTime": "25-07-2025 09:30",
+                    "AssignedTo": "Ravi",
+                    "Department": "Human Resources",
+                    "Division": "Recruitment",
+                    "AssignedHandledBy": "Ravi",
+                    "AssignmentAcceptedDate": "27-07-2025 09:30",
+                    "CurrentStatus": "Under Process",
+                    "LastUpdatedDate": "06-08-2025 14:15",
+                    "emails": [
+                      {
+                        "emailId": "EM-105-1",
+                        "from": "auditor@example.com",
+                        "dateTime": "05-08-2025 09:30",
+                        "to": "auditee@example.com",
+                        "cc": ["manager@example.com", "finance@example.com"],
+                        "subject": "Assignment of Exception EXC-105",
+                        "content": "Dear Ravi,<br><br>This email is to inform you that you have been assigned Exception EXC-105 related to the financial audit. Please review the details and take necessary action.<br><br>The exception details are as follows:<br>- Exception ID: EXC-105<br>- Description: Double Billing<br>- Department: Human Resources<br>- Division: Recruitment<br><br>Please acknowledge receipt of this assignment and provide an estimated timeline for resolution.<br><br>Regards,<br>Robert Johnson<br>Audit Department"
+                      },
+                      {
+                        "emailId": "EM-105-2",
+                        "from": "auditee@example.com",
+                        "dateTime": "06-08-2025 14:15",
+                        "to": "auditor@example.com",
+                        "cc": ["manager@example.com"],
+                        "subject": "Re: Assignment of Exception EXC-105",
+                        "content": "Dear Robert Johnson,<br><br>I acknowledge receipt of the assignment for Exception EXC-105. I am currently reviewing the details and will provide an update on the resolution timeline shortly.<br><br>Thank you for bringing this to my attention.<br><br>Regards,<br>Ravi<br>Human Resources"
+                      }
+                    ]
+                  }
+                },
+                { 
+                  "id": "EXC-106", 
+                  "name": "Payment to Wrong Vendor", 
+                  "underProcess": 1, 
+                  "closedByAuditee": 0, 
+                  "closedByAuditor": 0,
+                  "details": {
+                    "Sno": 6,
+                    "ExceptionID": "EXC-106",
+                    "AssignedBy": "Emily Davis",
+                    "AssignedDateTime": "26-07-2025 10:15",
+                    "AssignedTo": "Ravi",
+                    "Department": "Human Resources",
+                    "Division": "Recruitment",
+                    "AssignedHandledBy": "Michael Green",
+                    "AssignmentAcceptedDate": "28-07-2025 09:30",
+                    "CurrentStatus": "Under Process",
+                    "LastUpdatedDate": "09-08-2025 14:15",
+                    "emails": [
+                      {
+                        "emailId": "EM-106-1",
+                        "from": "auditor@example.com",
+                        "dateTime": "01-08-2025 09:30",
+                        "to": "auditee@example.com",
+                        "cc": ["manager@example.com", "finance@example.com"],
+                        "subject": "Assignment of Exception EXC-106",
+                        "content": "Dear Ravi,<br><br>This email is to inform you that you have been assigned Exception EXC-106 related to the financial audit. Please review the details and take necessary action.<br><br>The exception details are as follows:<br>- Exception ID: EXC-106<br>- Description: Payment to Wrong Vendor<br>- Department: Human Resources<br>- Division: Recruitment<br><br>Please acknowledge receipt of this assignment and provide an estimated timeline for resolution.<br><br>Regards,<br>Emily Davis<br>Audit Department"
+                      },
+                      {
+                        "emailId": "EM-106-2",
+                        "from": "auditee@example.com",
+                        "dateTime": "09-08-2025 14:15",
+                        "to": "auditor@example.com",
+                        "cc": ["manager@example.com"],
+                        "subject": "Re: Assignment of Exception EXC-106",
+                        "content": "Dear Emily Davis,<br><br>I acknowledge receipt of the assignment for Exception EXC-106. I am currently reviewing the details and will provide an update on the resolution timeline shortly.<br><br>Thank you for bringing this to my attention.<br><br>Regards,<br>Ravi<br>Human Resources"
+                      }
+                    ]
+                  }
+                },
+                { 
+                  "id": "EXC-107", 
+                  "name": "Duplicate Transaction", 
+                  "underProcess": 1, 
+                  "closedByAuditee": 0, 
+                  "closedByAuditor": 0,
+                  "details": {
+                    "Sno": 7,
+                    "ExceptionID": "EXC-107",
+                    "AssignedBy": "Ethan Blue",
+                    "AssignedDateTime": "21-07-2025 09:15",
+                    "AssignedTo": "Ravi",
+                    "Department": "Human Resources",
+                    "Division": "Recruitment",
+                    "AssignedHandledBy": "Ravi",
+                    "AssignmentAcceptedDate": "23-07-2025 09:15",
+                    "CurrentStatus": "Under Process",
+                    "LastUpdatedDate": "06-08-2025 14:15",
+                    "emails": [
+                      {
+                        "emailId": "EM-107-1",
+                        "from": "auditor@example.com",
+                        "dateTime": "05-08-2025 09:30",
+                        "to": "auditee@example.com",
+                        "cc": ["manager@example.com", "finance@example.com"],
+                        "subject": "Assignment of Exception EXC-107",
+                        "content": "Dear Ravi,<br><br>This email is to inform you that you have been assigned Exception EXC-107 related to the financial audit. Please review the details and take necessary action.<br><br>The exception details are as follows:<br>- Exception ID: EXC-107<br>- Description: Duplicate Transaction<br>- Department: Human Resources<br>- Division: Recruitment<br><br>Please acknowledge receipt of this assignment and provide an estimated timeline for resolution.<br><br>Regards,<br>Ethan Blue<br>Audit Department"
+                      },
+                      {
+                        "emailId": "EM-107-2",
+                        "from": "auditee@example.com",
+                        "dateTime": "06-08-2025 14:15",
+                        "to": "auditor@example.com",
+                        "cc": ["manager@example.com"],
+                        "subject": "Re: Assignment of Exception EXC-107",
+                        "content": "Dear Ethan Blue,<br><br>I acknowledge receipt of the assignment for Exception EXC-107. I am currently reviewing the details and will provide an update on the resolution timeline shortly.<br><br>Thank you for bringing this to my attention.<br><br>Regards,<br>Ravi<br>Human Resources"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            { 
+              "name": "Sita", 
+              "underProcess": 2, 
+              "closedByAuditee": 0, 
+              "closedByAuditor": 0,
+              "exceptions": [
+                { 
+                  "id": "EXC-108", 
+                  "name": "Contract Breach Payment", 
+                  "underProcess": 1, 
+                  "closedByAuditee": 0, 
+                  "closedByAuditor": 0,
+                  "details": {
+                    "Sno": 8,
+                    "ExceptionID": "EXC-108",
+                    "AssignedBy": "Ethan Blue",
+                    "AssignedDateTime": "27-07-2025 13:45",
+                    "AssignedTo": "Sita",
+                    "Department": "Human Resources",
+                    "Division": "Recruitment",
+                    "AssignedHandledBy": "Sarah White",
+                    "AssignmentAcceptedDate": "29-07-2025 09:30",
+                    "CurrentStatus": "Under Process",
+                    "LastUpdatedDate": "10-08-2025 14:15",
+                    "emails": [
+                      {
+                        "emailId": "EM-108-1",
+                        "from": "auditor@example.com",
+                        "dateTime": "02-08-2025 09:30",
+                        "to": "auditee@example.com",
+                        "cc": ["manager@example.com", "finance@example.com"],
+                        "subject": "Assignment of Exception EXC-108",
+                        "content": "Dear Sita,<br><br>This email is to inform you that you have been assigned Exception EXC-108 related to the financial audit. Please review the details and take necessary action.<br><br>The exception details are as follows:<br>- Exception ID: EXC-108<br>- Description: Contract Breach Payment<br>- Department: Human Resources<br>- Division: Recruitment<br><br>Please acknowledge receipt of this assignment and provide an estimated timeline for resolution.<br><br>Regards,<br>Ethan Blue<br>Audit Department"
+                      },
+                      {
+                        "emailId": "EM-108-2",
+                        "from": "auditee@example.com",
+                        "dateTime": "10-08-2025 14:15",
+                        "to": "auditor@example.com",
+                        "cc": ["manager@example.com"],
+                        "subject": "Re: Assignment of Exception EXC-108",
+                        "content": "Dear Ethan Blue,<br><br>I acknowledge receipt of the assignment for Exception EXC-108. I am currently reviewing the details and will provide an update on the resolution timeline shortly.<br><br>Thank you for bringing this to my attention.<br><br>Regards,<br>Sita<br>Human Resources"
+                      }
+                    ]
+                  }
+                },
+                { 
+                  "id": "EXC-109", 
+                  "name": "Duplicate Transaction", 
+                  "underProcess": 1, 
+                  "closedByAuditee": 0, 
+                  "closedByAuditor": 0,
+                  "details": {
+                    "Sno": 9,
+                    "ExceptionID": "EXC-109",
+                    "AssignedBy": "Ethan Blue",
+                    "AssignedDateTime": "21-07-2025 09:15",
+                    "AssignedTo": "Sita",
+                    "Department": "Human Resources",
+                    "Division": "Recruitment",
+                    "AssignedHandledBy": "Olivia Brown",
+                    "AssignmentAcceptedDate": "23-07-2025 09:15",
+                    "CurrentStatus": "Under Process",
+                    "LastUpdatedDate": "06-08-2025 14:15",
+                    "emails": [
+                      {
+                        "emailId": "EM-109-1",
+                        "from": "auditor@example.com",
+                        "dateTime": "05-08-2025 09:30",
+                        "to": "auditee@example.com",
+                        "cc": ["manager@example.com", "finance@example.com"],
+                        "subject": "Assignment of Exception EXC-109",
+                        "content": "Dear Sita,<br><br>This email is to inform you that you have been assigned Exception EXC-109 related to the financial audit. Please review the details and take necessary action.<br><br>The exception details are as follows:<br>- Exception ID: EXC-109<br>- Description: Duplicate Transaction<br>- Department: Human Resources<br>- Division: Recruitment<br><br>Please acknowledge receipt of this assignment and provide an estimated timeline for resolution.<br><br>Regards,<br>Ethan Blue<br>Audit Department"
+                      },
+                      {
+                        "emailId": "EM-109-2",
+                        "from": "auditee@example.com",
+                        "dateTime": "06-08-2025 14:15",
+                        "to": "auditor@example.com",
+                        "cc": ["manager@example.com"],
+                        "subject": "Re: Assignment of Exception EXC-109",
+                        "content": "Dear Ethan Blue,<br><br>I acknowledge receipt of the assignment for Exception EXC-109. I am currently reviewing the details and will provide an update on the resolution timeline shortly.<br><br>Thank you for bringing this to my attention.<br><br>Regards,<br>Sita<br>Human Resources"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        { 
+          "name": "Payroll", 
+          "underProcess": 3, 
+          "closedByAuditee": 0, 
+          "closedByAuditor": 0,
+          "people": [
+            { 
+              "name": "Hari", 
+              "underProcess": 3, 
+              "closedByAuditee": 0, 
+              "closedByAuditor": 0,
+              "exceptions": [
+                { 
+                  "id": "EXC-110", 
+                  "name": "Cheque Bounce Case", 
+                  "underProcess": 1, 
+                  "closedByAuditee": 0, 
+                  "closedByAuditor": 0,
+                  "details": {
+                    "Sno": 10,
+                    "ExceptionID": "EXC-110",
+                    "AssignedBy": "John Doe",
+                    "AssignedDateTime": "28-07-2025 11:00",
+                    "AssignedTo": "Hari",
+                    "Department": "Human Resources",
+                    "Division": "Payroll",
+                    "AssignedHandledBy": "David Wilson",
+                    "AssignmentAcceptedDate": "30-07-2025 13:45",
+                    "CurrentStatus": "Under Process",
+                    "LastUpdatedDate": "07-08-2025 14:15",
+                    "emails": [
+                      {
+                        "emailId": "EM-110-1",
+                        "from": "auditor@example.com",
+                        "dateTime": "05-08-2025 09:30",
+                        "to": "auditee@example.com",
+                        "cc": ["manager@example.com", "finance@example.com"],
+                        "subject": "Assignment of Exception EXC-110",
+                        "content": "Dear Hari,<br><br>This email is to inform you that you have been assigned Exception EXC-110 related to the financial audit. Please review the details and take necessary action.<br><br>The exception details are as follows:<br>- Exception ID: EXC-110<br>- Description: Cheque Bounce Case<br>- Department: Human Resources<br>- Division: Payroll<br><br>Please acknowledge receipt of this assignment and provide an estimated timeline for resolution.<br><br>Regards,<br>John Doe<br>Audit Department"
+                      },
+                      {
+                        "emailId": "EM-110-2",
+                        "from": "auditee@example.com",
+                        "dateTime": "07-08-2025 14:15",
+                        "to": "auditor@example.com",
+                        "cc": ["manager@example.com"],
+                        "subject": "Re: Assignment of Exception EXC-110",
+                        "content": "Dear John Doe,<br><br>I acknowledge receipt of the assignment for Exception EXC-110. I am currently reviewing the details and will provide an update on the resolution timeline shortly.<br><br>Thank you for bringing this to my attention.<br><br>Regards,<br>Hari<br>Human Resources"
+                      }
+                    ]
+                  }
+                },
+                { 
+                  "id": "EXC-111", 
+                  "name": "Unrecorded Payment", 
+                  "underProcess": 1, 
+                  "closedByAuditee": 0, 
+                  "closedByAuditor": 0,
+                  "details": {
+                    "Sno": 11,
+                    "ExceptionID": "EXC-111",
+                    "AssignedBy": "Jane Smith",
+                    "AssignedDateTime": "29-07-2025 14:30",
+                    "AssignedTo": "Hari",
+                    "Department": "Human Resources",
+                    "Division": "Payroll",
+                    "AssignedHandledBy": "Lisa Taylor",
+                    "AssignmentAcceptedDate": "31-07-2025 13:45",
+                    "CurrentStatus": "Under Process",
+                    "LastUpdatedDate": "06-08-2025 14:15",
+                    "emails": [
+                      {
+                        "emailId": "EM-111-1",
+                        "from": "auditor@example.com",
+                        "dateTime": "05-08-2025 09:30",
+                        "to": "auditee@example.com",
+                        "cc": ["manager@example.com", "finance@example.com"],
+                        "subject": "Assignment of Exception EXC-111",
+                        "content": "Dear Hari,<br><br>This email is to inform you that you have been assigned Exception EXC-111 related to the financial audit. Please review the details and take necessary action.<br><br>The exception details are as follows:<br>- Exception ID: EXC-111<br>- Description: Unrecorded Payment<br>- Department: Human Resources<br>- Division: Payroll<br><br>Please acknowledge receipt of this assignment and provide an estimated timeline for resolution.<br><br>Regards,<br>Jane Smith<br>Audit Department"
+                      },
+                      {
+                        "emailId": "EM-111-2",
+                        "from": "auditee@example.com",
+                        "dateTime": "06-08-2025 14:15",
+                        "to": "auditor@example.com",
+                        "cc": ["manager@example.com"],
+                        "subject": "Re: Assignment of Exception EXC-111",
+                        "content": "Dear Jane Smith,<br><br>I acknowledge receipt of the assignment for Exception EXC-111. I am currently reviewing the details and will provide an update on the resolution timeline shortly.<br><br>Thank you for bringing this to my attention.<br><br>Regards,<br>Hari<br>Human Resources"
+                      }
+                    ]
+                  }
+                },
+                { 
+                  "id": "EXC-112", 
+                  "name": "Payment to Wrong Vendor", 
+                  "underProcess": 1, 
+                  "closedByAuditee": 0, 
+                  "closedByAuditor": 0,
+                  "details": {
+                    "Sno": 12,
+                    "ExceptionID": "EXC-112",
+                    "AssignedBy": "Emily Davis",
+                    "AssignedDateTime": "26-07-2025 10:15",
+                    "AssignedTo": "Hari",
+                    "Department": "Human Resources",
+                    "Division": "Payroll",
+                    "AssignedHandledBy": "Michael Green",
+                    "AssignmentAcceptedDate": "28-07-2025 09:30",
+                    "CurrentStatus": "Under Process",
+                    "LastUpdatedDate": "06-08-2025 14:15",
+                    "emails": [
+                      {
+                        "emailId": "EM-112-1",
+                        "from": "auditor@example.com",
+                        "dateTime": "05-08-2025 09:30",
+                        "to": "auditee@example.com",
+                        "cc": ["manager@example.com", "finance@example.com"],
+                        "subject": "Assignment of Exception EXC-112",
+                        "content": "Dear Hari,<br><br>This email is to inform you that you have been assigned Exception EXC-112 related to the financial audit. Please review the details and take necessary action.<br><br>The exception details are as follows:<br>- Exception ID: EXC-112<br>- Description: Payment to Wrong Vendor<br>- Department: Human Resources<br>- Division: Payroll<br><br>Please acknowledge receipt of this assignment and provide an estimated timeline for resolution.<br><br>Regards,<br>Emily Davis<br>Audit Department"
+                      },
+                      {
+                        "emailId": "EM-112-2",
+                        "from": "auditee@example.com",
+                        "dateTime": "06-08-2025 14:15",
+                        "to": "auditor@example.com",
+                        "cc": ["manager@example.com"],
+                        "subject": "Re: Assignment of Exception EXC-112",
+                        "content": "Dear Emily Davis,<br><br>I acknowledge receipt of the assignment for Exception EXC-112. I am currently reviewing the details and will provide an update on the resolution timeline shortly.<br><br>Thank you for bringing this to my attention.<br><br>Regards,<br>Hari<br>Human Resources"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        { 
+          "name": "Employee Relations", 
+          "underProcess": 3, 
+          "closedByAuditee": 0, 
+          "closedByAuditor": 0,
+          "people": [
+            { 
+              "name": "Anu", 
+              "underProcess": 1, 
+              "closedByAuditee": 0, 
+              "closedByAuditor": 0,
+              "exceptions": [
+                { 
+                  "id": "EXC-113", 
+                  "name": "Tax Overpayment", 
+                  "underProcess": 1, 
+                  "closedByAuditee": 0, 
+                  "closedByAuditor": 0,
+                  "details": {
+                    "Sno": 13,
+                    "ExceptionID": "EXC-113",
+                    "AssignedBy": "Robert Johnson",
+                    "AssignedDateTime": "30-07-2025 10:45",
+                    "AssignedTo": "Anu",
+                    "Department": "Human Resources",
+                    "Division": "Employee Relations",
+                    "AssignedHandledBy": "Olivia Brown",
+                    "AssignmentAcceptedDate": "01-08-2025 13:45",
+                    "CurrentStatus": "Under Process",
+                    "LastUpdatedDate": "06-08-2025 14:15",
+                    "emails": [
+                      {
+                        "emailId": "EM-113-1",
+                        "from": "auditor@example.com",
+                        "dateTime": "05-08-2025 09:30",
+                        "to": "auditee@example.com",
+                        "cc": ["manager@example.com", "finance@example.com"],
+                        "subject": "Assignment of Exception EXC-113",
+                        "content": "Dear Anu,<br><br>This email is to inform you that you have been assigned Exception EXC-113 related to the financial audit. Please review the details and take necessary action.<br><br>The exception details are as follows:<br>- Exception ID: EXC-113<br>- Description: Tax Overpayment<br>- Department: Human Resources<br>- Division: Employee Relations<br><br>Please acknowledge receipt of this assignment and provide an estimated timeline for resolution.<br><br>Regards,<br>Robert Johnson<br>Audit Department"
+                      },
+                      {
+                        "emailId": "EM-113-2",
+                        "from": "auditee@example.com",
+                        "dateTime": "06-08-2025 14:15",
+                        "to": "auditor@example.com",
+                        "cc": ["manager@example.com"],
+                        "subject": "Re: Assignment of Exception EXC-113",
+                        "content": "Dear Robert Johnson,<br><br>I acknowledge receipt of the assignment for Exception EXC-113. I am currently reviewing the details and will provide an update on the resolution timeline shortly.<br><br>Thank you for bringing this to my attention.<br><br>Regards,<br>Anu<br>Human Resources"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            { 
+              "name": "Prakash", 
+              "underProcess": 2, 
+              "closedByAuditee": 0, 
+              "closedByAuditor": 0,
+              "exceptions": [
+                { 
+                  "id": "EXC-114", 
+                  "name": "Employee Reimbursement Fraud", 
+                  "underProcess": 1, 
+                  "closedByAuditee": 0, 
+                  "closedByAuditor": 0,
+                  "details": {
+                    "Sno": 14,
+                    "ExceptionID": "EXC-114",
+                    "AssignedBy": "Emily Davis",
+                    "AssignedDateTime": "31-07-2025 09:15",
+                    "AssignedTo": "Prakash",
+                    "Department": "Human Resources",
+                    "Division": "Employee Relations",
+                    "AssignedHandledBy": "Michael Green",
+                    "AssignmentAcceptedDate": "02-08-2025 10:45",
+                    "CurrentStatus": "Under Process",
+                    "LastUpdatedDate": "06-08-2025 14:15",
+                    "emails": [
+                      {
+                        "emailId": "EM-114-1",
+                        "from": "auditor@example.com",
+                        "dateTime": "05-08-2025 09:30",
+                        "to": "auditee@example.com",
+                        "cc": ["manager@example.com", "finance@example.com"],
+                        "subject": "Assignment of Exception EXC-114",
+                        "content": "Dear Prakash,<br><br>This email is to inform you that you have been assigned Exception EXC-114 related to the financial audit. Please review the details and take necessary action.<br><br>The exception details are as follows:<br>- Exception ID: EXC-114<br>- Description: Employee Reimbursement Fraud<br>- Department: Human Resources<br>- Division: Employee Relations<br><br>Please acknowledge receipt of this assignment and provide an estimated timeline for resolution.<br><br>Regards,<br>Emily Davis<br>Audit Department"
+                      },
+                      {
+                        "emailId": "EM-114-2",
+                        "from": "auditee@example.com",
+                        "dateTime": "06-08-2025 14:15",
+                        "to": "auditor@example.com",
+                        "cc": ["manager@example.com"],
+                        "subject": "Re: Assignment of Exception EXC-114",
+                        "content": "Dear Emily Davis,<br><br>I acknowledge receipt of the assignment for Exception EXC-114. I am currently reviewing the details and will provide an update on the resolution timeline shortly.<br><br>Thank you for bringing this to my attention.<br><br>Regards,<br>Prakash<br>Human Resources"
+                      }
+                    ]
+                  }
+                },
+                { 
+                  "id": "EXC-115", 
+                  "name": "Payment to Wrong Vendor", 
+                  "underProcess": 1, 
+                  "closedByAuditee": 0, 
+                  "closedByAuditor": 0,
+                  "details": {
+                    "Sno": 15,
+                    "ExceptionID": "EXC-115",
+                    "AssignedBy": "Emily Davis",
+                    "AssignedDateTime": "26-07-2025 10:15",
+                    "AssignedTo": "Prakash",
+                    "Department": "Human Resources",
+                    "Division": "Employee Relations",
+                    "AssignedHandledBy": "Michael Green",
+                    "AssignmentAcceptedDate": "28-07-2025 09:30",
+                    "CurrentStatus": "Under Process",
+                    "LastUpdatedDate": "11-08-2025 12:30",
+                    "emails": [
+                      {
+                        "emailId": "EM-115-1",
+                        "from": "auditor@example.com",
+                        "dateTime": "05-08-2025 09:30",
+                        "to": "auditee@example.com",
+                        "cc": ["manager@example.com", "finance@example.com"],
+                        "subject": "Assignment of Exception EXC-115",
+                        "content": "Dear Prakash,<br><br>This email is to inform you that you have been assigned Exception EXC-115 related to the financial audit. Please review the details and take necessary action.<br><br>The exception details are as follows:<br>- Exception ID: EXC-115<br>- Description: Payment to Wrong Vendor<br>- Department: Human Resources<br>- Division: Employee Relations<br><br>Please acknowledge receipt of this assignment and provide an estimated timeline for resolution.<br><br>Regards,<br>Emily Davis<br>Audit Department"
+                      },
+                      {
+                        "emailId": "EM-115-2",
+                        "from": "auditee@example.com",
+                        "dateTime": "11-08-2025 12:30",
+                        "to": "auditor@example.com",
+                        "cc": ["manager@example.com"],
+                        "subject": "Re: Assignment of Exception EXC-115",
+                        "content": "Dear Emily Davis,<br><br>I acknowledge receipt of the assignment for Exception EXC-115. I am currently reviewing the details and will provide an update on the resolution timeline shortly.<br><br>Thank you for bringing this to my attention.<br><br>Regards,<br>Prakash<br>Human Resources"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Procurement", 
+      "underProcess": 2, 
+      "closedByAuditee": 0, 
+      "closedByAuditor": 0,
+      "divisions": [
+        { 
+          "name": "Vendor Management", 
+          "underProcess": 1, 
+          "closedByAuditee": 0, 
+          "closedByAuditor": 0,
+          "people": [
+            { 
+              "name": "Lalitha", 
+              "underProcess": 1, 
+              "closedByAuditee": 0, 
+              "closedByAuditor": 0,
+              "exceptions": [
+                { 
+                  "id": "EXC-116", 
+                  "name": "Delayed Payment Penalty", 
+                  "underProcess": 1, 
+                  "closedByAuditee": 0, 
+                  "closedByAuditor": 0,
+                  "details": {
+                    "Sno": 16,
+                    "ExceptionID": "EXC-116",
+                    "AssignedBy": "Ethan Blue",
+                    "AssignedDateTime": "01-08-2025 13:20",
+                    "AssignedTo": "Lalitha",
+                    "Department": "Procurement",
+                    "Division": "Vendor Management",
+                    "AssignedHandledBy": "Sarah White",
+                    "AssignmentAcceptedDate": "03-08-2025 10:45",
+                    "CurrentStatus": "Under Process",
+                    "LastUpdatedDate": "17-08-2025 15:30",
+                    "emails": [
+                      {
+                        "emailId": "EM-116-1",
+                        "from": "auditor@example.com",
+                        "dateTime": "05-08-2025 09:30",
+                        "to": "auditee@example.com",
+                        "cc": ["manager@example.com", "finance@example.com"],
+                        "subject": "Assignment of Exception EXC-116",
+                        "content": "Dear Lalitha,<br><br>This email is to inform you that you have been assigned Exception EXC-116 related to the financial audit. Please review the details and take necessary action.<br><br>The exception details are as follows:<br>- Exception ID: EXC-116<br>- Description: Delayed Payment Penalty<br>- Department: Procurement<br>- Division: Vendor Management<br><br>Please acknowledge receipt of this assignment and provide an estimated timeline for resolution.<br><br>Regards,<br>Ethan Blue<br>Audit Department"
+                      },
+                      {
+                        "emailId": "EM-116-2",
+                        "from": "auditee@example.com",
+                        "dateTime": "17-08-2025 15:30",
+                        "to": "auditor@example.com",
+                        "cc": ["manager@example.com"],
+                        "subject": "Re: Assignment of Exception EXC-116",
+                        "content": "Dear Ethan Blue,<br><br>I acknowledge receipt of the assignment for Exception EXC-116. I am currently reviewing the details and will provide an update on the resolution timeline shortly.<br><br>Thank you for bringing this to my attention.<br><br>Regards,<br>Lalitha<br>Procurement"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        { 
+          "name": "Purchase Orders", 
+          "underProcess": 1, 
+          "closedByAuditee": 0, 
+          "closedByAuditor": 0,
+          "people": [
+            { 
+              "name": "Vishnu", 
+              "underProcess": 1, 
+              "closedByAuditee": 0, 
+              "closedByAuditor": 0,
+              "exceptions": [
+                { 
+                  "id": "EXC-117", 
+                  "name": "System Entry Duplication", 
+                  "underProcess": 1, 
+                  "closedByAuditee": 0, 
+                  "closedByAuditor": 0,
+                  "details": {
+                    "Sno": 17,
+                    "ExceptionID": "EXC-117",
+                    "AssignedBy": "John Doe",
+                    "AssignedDateTime": "02-08-2025 11:40",
+                    "AssignedTo": "Vishnu",
+                    "Department": "Procurement",
+                    "Division": "Purchase Orders",
+                    "AssignedHandledBy": "David Wilson",
+                    "AssignmentAcceptedDate": "04-08-2025 11:40",
+                    "CurrentStatus": "Under Process",
+                    "LastUpdatedDate": "18-08-2025 10:30",
+                    "emails": [
+                      {
+                        "emailId": "EM-117-1",
+                        "from": "auditor@example.com",
+                        "dateTime": "05-08-2025 09:30",
+                        "to": "auditee@example.com",
+                        "cc": ["manager@example.com", "finance@example.com"],
+                        "subject": "Assignment of Exception EXC-117",
+                        "content": "Dear Vishnu,<br><br>This email is to inform you that you have been assigned Exception EXC-117 related to the financial audit. Please review the details and take necessary action.<br><br>The exception details are as follows:<br>- Exception ID: EXC-117<br>- Description: System Entry Duplication<br>- Department: Procurement<br>- Division: Purchase Orders<br><br>Please acknowledge receipt of this assignment and provide an estimated timeline for resolution.<br><br>Regards,<br>John Doe<br>Audit Department"
+                      },
+                      {
+                        "emailId": "EM-117-2",
+                        "from": "auditee@example.com",
+                        "dateTime": "18-08-2025 10:30",
+                        "to": "auditor@example.com",
+                        "cc": ["manager@example.com"],
+                        "subject": "Re: Assignment of Exception EXC-117",
+                        "content": "Dear John Doe,<br><br>I acknowledge receipt of the assignment for Exception EXC-117. I am currently reviewing the details and will provide an update on the resolution timeline shortly.<br><br>Thank you for bringing this to my attention.<br><br>Regards,<br>Vishnu<br>Procurement"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

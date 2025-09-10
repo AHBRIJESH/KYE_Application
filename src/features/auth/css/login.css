@@ -1,0 +1,395 @@
+@import '../../../styles/reusable.css';
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: stretch;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+}
+
+.left-side {
+  background: var(--white);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 400px;
+  width: 45%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  border-radius: 0 12px 12px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.left-side::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #16355f, #274b92, #4a89dc);
+  z-index: 1;
+}
+
+.right-side {
+  flex: 1;
+  background: linear-gradient(135deg, #ebf4fa 0%, #d9e8f6 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.right-side::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(22, 53, 95, 0.03);
+  z-index: 1;
+}
+
+.right-side img {
+  max-width: 85%;
+  max-height: 85%;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.1));
+  z-index: 2;
+}
+
+/* Brand Section */
+.brand-section {
+  margin-bottom: 2rem;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.company-logo {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.company-logo:hover {
+  transform: scale(1.05);
+}
+
+.audit-title {
+  font-weight: 700;
+  color: #16355f;
+  font-size: 1.6rem;
+  letter-spacing: 0.5px;
+  margin: 0.5rem 0;
+  text-align: center;
+}
+
+.welcome-text {
+  color: #6c757d;
+  font-size: 0.95rem;
+  text-align: center;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Form Styles */
+.login-form {
+  background: #f8fafc;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.form-label {
+  font-weight: 600;
+  color: #12243e;
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.form-label i {
+  color: #4a89dc;
+  font-size: 1rem;
+}
+
+.form-control {
+  border: 1px solid #e5e9f2;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  height: 40px;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 3px rgba(74, 137, 220, 0.2);
+  border-color: #4a89dc;
+  outline: none;
+}
+
+.input-group {
+  position: relative;
+}
+
+.password-toggle-btn {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  bottom: 1px;
+  background: #f8f9fa;
+  border: 1px solid #e5e9f2;
+  border-left: none;
+  border-radius: 0 6px 6px 0;
+  padding: 0 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.password-toggle-btn:hover {
+  background: #e9ecef;
+}
+
+.form-check {
+  font-size: 0.9rem;
+}
+
+.form-check-label {
+  color: #6c757d;
+  font-weight: 500;
+}
+
+.forgot-password-btn {
+  background: none;
+  border: none;
+  color: #274b92;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.9rem;
+  padding: 0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.forgot-password-btn:hover {
+  color: #16355f;
+  text-decoration: underline;
+}
+
+.login-btn {
+  padding: 0.65rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #16355f, #274b92);
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  color: white;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.login-btn:hover {
+  background: linear-gradient(135deg, #0f2949, #16355f);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(22, 53, 95, 0.3);
+}
+
+/* Alerts */
+.alert {
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.alert i {
+  font-size: 1.1rem;
+}
+
+/* Divider */
+.divider {
+  position: relative;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.divider::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+  z-index: 0;
+}
+
+.divider span {
+  background: white;
+  padding: 0 1rem;
+  position: relative;
+  z-index: 1;
+  color: #6c757d;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Support Info */
+.support-info {
+  font-size: 0.85rem;
+}
+
+.support-info p {
+  margin: 0.25rem 0;
+}
+
+.support-info i {
+  color: #4a89dc;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .left-side {
+    min-width: 380px;
+  }
+  
+  .right-side img {
+    max-width: 80%;
+    max-height: 80%;
+  }
+}
+
+@media (max-width: 992px) {
+  .login-container {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .left-side, .right-side {
+    width: 100%;
+    min-width: unset;
+    border-radius: 0;
+  }
+  
+  .left-side {
+    box-shadow: none;
+    padding: 1.5rem;
+    border-radius: 0 0 12px 12px;
+  }
+  
+  .right-side {
+    min-height: 250px;
+    border-radius: 12px 12px 0 0;
+  }
+  
+  .right-side img {
+    max-width: 90%;
+    max-height: 200px;
+  }
+  
+  .login-form {
+    padding: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .left-side {
+    padding: 1.25rem;
+  }
+  
+  .company-logo {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .audit-title {
+    font-size: 1.4rem;
+  }
+  
+  .login-form {
+    padding: 1rem;
+  }
+  
+  .form-control {
+    height: 36px;
+    font-size: 0.9rem;
+  }
+  
+  .login-btn {
+    font-size: 0.95rem;
+    padding: 0.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .left-side {
+    padding: 1rem;
+  }
+  
+  .brand-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  .company-logo {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .audit-title {
+    font-size: 1.3rem;
+  }
+  
+  .welcome-text {
+    font-size: 0.9rem;
+  }
+  
+  .login-form {
+    padding: 0.75rem;
+  }
+  
+  .form-label {
+    font-size: 0.9rem;
+  }
+  
+  .form-control {
+    height: 34px;
+    font-size: 0.85rem;
+    padding: 0.4rem 0.6rem;
+  }
+  
+  .password-toggle-btn {
+    padding: 0 8px;
+  }
+  
+  .login-btn {
+    font-size: 0.9rem;
+    padding: 0.55rem;
+  }
+  
+  .alert {
+    font-size: 0.85rem;
+    padding: 0.6rem 0.8rem;
+  }
+}
