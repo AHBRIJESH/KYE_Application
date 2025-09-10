@@ -32,7 +32,19 @@ function Login() {
 
   return (
     <div className="login-container">
-      <div className="left-side">
+      {/* Left Side Image */}
+      <div className="left-side d-none d-lg-flex">
+        <div className="image-container">
+          <img 
+            src="/assets/img/login-office-right.png" 
+            alt="Audit Office" 
+            className="side-image"
+          />
+        </div>
+      </div>
+      
+      {/* Form Section */}
+      <div className="form-section">
         <div className="brand-section text-center mb-4">
           <div className="logo-container mb-3">
             <img 
@@ -41,11 +53,13 @@ function Login() {
               className="company-logo" 
             />
           </div>
+          <h2 className="welcome-title">Welcome</h2>
+          <p className="subtitle">Sign in to your account to continue</p>
         </div>
         
         <form onSubmit={handleSubmit} autoComplete="on" className="login-form">
           <div className="form-group mb-3">
-            <label htmlFor="userEmail" className="form-label">
+            <label htmlFor="userEmail" className="form-label" style={{ fontWeight: 'bold', fontSize: '12px' }}>
               <i className="bi bi-person-fill me-2"></i>User ID
             </label>
             <div className="input-group">
@@ -58,15 +72,16 @@ function Login() {
                 onChange={(e) => setEmail(e.target.value)}
                 required 
                 autoComplete="username"
+                style={{ paddingRight: '40px', height: '40px' }}
               />
             </div>
           </div>
           
-          <div className="form-group mb-3 position-relative">
-            <label htmlFor="userPassword" className="form-label">
+          <div className="form-group mb-4 position-relative">
+            <label htmlFor="userPassword" className="form-label" style={{ fontWeight: 'bold', fontSize: '12px' }}>
               <i className="bi bi-lock-fill me-2"></i>Password
             </label>
-            <div className="input-group">
+            <div className="password-input-group">
               <input 
                 type={showPassword ? "text" : "password"} 
                 className="form-control" 
@@ -76,13 +91,15 @@ function Login() {
                 onChange={(e) => setPassword(e.target.value)}
                 required 
                 autoComplete="current-password"
+                style={{ paddingRight: '40px', height: '40px' }}
               />
               <button 
                 type="button" 
-                className="btn password-toggle-btn" 
+                className="password-toggle-btn" 
                 onClick={togglePasswordVisibility}
+                title={showPassword ? "Hide password" : "Show password"}
               >
-                <i className={`bi ${showPassword ? 'bi-eye-slash-fill' : 'bi-eye-fill'}`}></i>
+                <i className={`bi ${showPassword ? 'bi-eye-fill' : 'bi-eye-slash-fill'}`}></i>
               </button>
             </div>
           </div>
@@ -101,7 +118,7 @@ function Login() {
             </button>
           </div>
           
-          <div className="d-grid">
+          <div className="d-grid mb-3">
             <button type="submit" className="btn login-btn">
               <i className="bi bi-box-arrow-in-right me-2"></i>Sign In
             </button>
@@ -123,18 +140,13 @@ function Login() {
         )}
         
         <div className="text-center mt-4">
-          
           <div className="support-info mt-3">
             <p className="mb-1">
               <i className="bi bi-headset me-2"></i>Need help? Contact Support
             </p>
-            <p className="mb-0 text-muted">support@aamindata.com | +1 (555) 123-4567</p>
+            <p className="mb-0 text-muted">info@aamindata.com | +971 586 527 028</p>
           </div>
         </div>
-      </div>
-      
-      <div className="right-side d-none d-md-flex">
-        <img src="/assets/img/login-office-right.png" alt="Audit Office" />
       </div>
     </div>
   );
